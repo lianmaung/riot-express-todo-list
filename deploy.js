@@ -49,7 +49,7 @@ function transferProjectToRemote(failed, successful) {
 // creates a temporary folder on the remote server
 function createRemoteTempFolder() {
   return ssh.execCommand(
-    'rm -rf riot-express-todo-list-temp && mkdir riot-express-todo-list', {
+    'rm -rf riot-express-todo-list-temp && mkdir riot-express-todo-list-temp', {
       cwd: '/home/ubuntu'
   });
 }
